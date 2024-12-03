@@ -80,6 +80,7 @@ main {
 .sheep-card p {
     font-size: 1rem;
     color: #555;
+    transition: display 0.3s ease;
 }
 
 footer {
@@ -90,4 +91,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+.sheep-card p {
+    display: none;
 }

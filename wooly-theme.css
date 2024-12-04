@@ -56,8 +56,8 @@ main {
 }
 
 .sheep-card {
-    background-color: white;
-    border: 1px solid #ddd;
+    background-color: rgb(167, 221, 221);
+    border: 1px solid transparent;
     border-radius: 10px;
     width: 250px;
     padding: 15px;
@@ -66,10 +66,12 @@ main {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .sheep-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
+
 .sheep-card h3 {
     font-size: 1.6rem;
     margin-bottom: 10px;
@@ -78,6 +80,7 @@ main {
 .sheep-card p {
     font-size: 1rem;
     color: #555;
+    transition: display 0.3s ease;
 }
 
 footer {
@@ -88,4 +91,41 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+.sheep-card p {
+    display: none;
+}
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.sheep-info::after,
+.sheep-info::before {
+    content: '';
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+    top: -35%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    animation: 3s spin linear infinite;
+}
+
+.sheep-info:before {
+    filter: blur(1,5rem);
+    opacity: 0.5;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
 }

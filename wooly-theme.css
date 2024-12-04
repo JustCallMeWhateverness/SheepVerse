@@ -12,12 +12,13 @@ body {
 }
 
 header {
-    background-color: #6a9c78;
+    background-color: #b0cfb993;
     color: white;
     padding: 20px;
     margin: 30px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
 }
 
 header .logo h1 {
@@ -56,7 +57,7 @@ main {
 }
 
 .sheep-card {
-    background-color: rgb(143, 212, 195);
+    background-color: rgba(210, 224, 221, 0.849);
     border: 1px solid transparent;
     border-radius: 10px;
     width: 250px;

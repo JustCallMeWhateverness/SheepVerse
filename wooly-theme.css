@@ -14,7 +14,7 @@ body {
 header {
     background-color: #b0cfb9a8;
     backdrop-filter: blur(10px);
-    color: white;
+    color: rgb(54, 52, 52);
     padding: 20px;
     margin: 30px;
     text-align: center;
@@ -38,7 +38,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(43, 39, 39);
     text-decoration: none;
     font-size: 1.1rem;
 }
@@ -58,7 +58,7 @@ main {
 }
 
 .sheep-card {
-    background-color: rgba(210, 224, 221, 0.849);
+    background-color: rgba(209, 245, 243, 0.849);
     border: 1px solid transparent;
     border-radius: 10px;
     width: 250px;

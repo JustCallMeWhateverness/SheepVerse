@@ -12,7 +12,8 @@ body {
 }
 
 header {
-    background-color: #b0cfb993;
+    background-color: #b0cfb9a8;
+    backdrop-filter: blur(10px);
     color: white;
     padding: 20px;
     margin: 30px;
@@ -106,16 +107,15 @@ footer {
 .sheep-info::before {
     content: '';
     position:absolute;
-    height: 100%;
-    width: 94%;
+    height: 15%;
+    width: 95%;
     background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
-    top: -30%;
+    top: 10%;
     left: 50%;
     translate: -50% -50%;
     z-index: -1;
     animation: 3s spin linear infinite;
     box-shadow:0 6px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
 }
 
 .sheep-info:before {

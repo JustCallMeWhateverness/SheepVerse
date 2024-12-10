@@ -7,13 +7,13 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to bottom, #669999 0%, #339966 100%);
+    background: linear-gradient(to bottom, #a6e6e6 0%, #3a5e4c 100%);
     background-attachment: fixed;
 }
 
 header {
     background-color: #b0cfb9a8;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(50px);
     color: rgb(54, 52, 52);
     padding: 20px;
     margin: 30px;
@@ -58,9 +58,10 @@ main {
 }
 
 .sheep-card {
-    background-color: rgba(209, 245, 243, 0.849);
+    background-color: rgba(236, 245, 244, 0.644);
+    backdrop-filter: blur(50px);
     border: 1px solid transparent;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 250px;
     padding: 15px;
     margin: 10px;
@@ -70,7 +71,7 @@ main {
 }
 
 .sheep-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-15px);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
